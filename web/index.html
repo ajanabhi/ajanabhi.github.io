@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="AjaNabhi Dev">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="website">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>AjaNabhi</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+  
+    /* body {
+      margin: 0;
+      font-size: 13px;
+      line-height: 20px;
+    }
+    
+    a {
+      color: red;
+      background: transparent;
+      text-decoration: none;
+    } */
+    /*body.pg-loading {*/
+    /*overflow: hidden;*/
+    /*}*/
+    .pg-loading-screen {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      font-family: "Sans-Serif";
+      right: 0;
+      top: 0;
+      z-index: 1000000;
+      width: 100vw;
+      height: 100vh;
+      opacity: 1;
+      /*background-color: #d35400;*/
+      background-color: #1878e6;
+      -webkit-transition: background-color 0.4s ease-in-out 0s;
+      -moz-transition: background-color 0.4s ease-in-out 0s;
+      -ms-transition: background-color 0.4s ease-in-out 0s;
+      -o-transition: background-color 0.4s ease-in-out 0s;
+      transition: background-color 0.4s ease-in-out 0s;
+    }
+    
+    .spinner {
+      margin: 50px auto 0;
+      width: 70px;
+      text-align: center;
+    }
+    
+    .spinner>div {
+      width: 18px;
+      height: 18px;
+      background-color: white;
+      border-radius: 100%;
+      display: inline-block;
+      -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+      animation: bouncedelay 1.4s infinite ease-in-out;
+      /* Prevent first frame from flickering when animation starts */
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    
+    .spinner .bounce1 {
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+    
+    .spinner .bounce2 {
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+    }
+    
+    .message {
+      text-align: center;
+      margin: 100px auto;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    
+  
+    
+    /* body.pg-loaded>#container {
+      display: block;
+    } */
+    
+    hr {
+      border: none;
+      border-bottom: solid 1px #e0e0e0;
+      margin-top: 0;
+      margin-bottom: 18px;	
+      box-sizing: content-box;
+      height: 0;
+    }
+    </style>
+</head>
+<body>
+  <script type="text/javascript">
+		var loadingElement = document.createElement("div");
+    loadingElement.id = "loading-indicator";
+		loadingElement.className = "pg-loading-screen";
+		loadingElement.innerHTML = "<div class=\"message\">"
+				+ "<blockquote>AjaNabhi Dev</blockquote>"
+				+ "<div class=\"spinner\">" + "<div class=\"bounce1\"></div>"
+				+ "<div class=\"bounce2\"></div>"
+				+ "<div class=\"bounce3\"></div>" + "</div>" + "</div>";
+		document.body.appendChild(loadingElement);
+
+	</script>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
