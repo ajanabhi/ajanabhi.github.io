@@ -1,16 +1,4 @@
-# website
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The Sanskrit term Aja-Nabhi (अजनाभि) refers directly to "The Navel of the Unborn". In Hindu cosmology, it is the ancient, primordial name for the Indian subcontinent (India), long before it was known as Bharatavarsha or Hindustan.
+To understand its profound spiritual and geographical meaning, the term can be broken down into its two roots:
+• Aja (अज): Translates to "Unborn," "eternal," or "self-existent". It is a direct epithet for the Creator God, Lord Brahma, or the supreme cosmic soul (Atman).
+• Nabhi (नाभि): Translates to "Navel," "hub," or the "absolute center" of a wheel or the universe.
